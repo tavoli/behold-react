@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: linear-gradient(135deg, #FFF4E8 0%, #FFECB3 50%, #FFE082 100%);
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.count-display {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #FFC31C 0%, #FFB000 100%);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  box-shadow: 
+    0 12px 32px rgba(255, 195, 28, 0.3),
+    0 6px 16px rgba(255, 195, 28, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.count-display:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 16px 40px rgba(255, 195, 28, 0.4),
+    0 8px 20px rgba(255, 195, 28, 0.3);
+}
+
+.decrement-button,
+.increment-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #666;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.decrement-button:hover,
+.increment-button:hover {
+  transform: translateY(-2px);
+  border-color: #FFC31C;
+  box-shadow: 
+    0 4px 12px rgba(255, 195, 28, 0.15),
+    0 2px 6px rgba(255, 195, 28, 0.1);
+  color: #FFC31C;
+}
+
+.decrement-button:active,
+.increment-button:active {
+  transform: translateY(0);
+  box-shadow: 
+    0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.increment-button {
+  position: relative;
+}
+
+.increment-button:hover::after {
+  opacity: 1;
+}

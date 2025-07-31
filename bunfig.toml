@@ -1,0 +1,10 @@
+[build]
+target = "browser"
+outdir = "./dist"
+
+[dev]
+hot = true
+
+[bundler]
+# CSS Modules configuration
+css = { modules = true }

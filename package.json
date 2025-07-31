@@ -1,0 +1,14 @@
+{
+  "name": "behold-react",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot --serve index.html",
+    "build": "bun build src/main.tsx --outdir=dist --target=browser --minify",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3"
+  }
+}
